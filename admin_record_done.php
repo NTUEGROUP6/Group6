@@ -3,19 +3,20 @@
 <head>
 <?php
 	include("mysql_connect.php");
-	$serial = $_POST['serial']; 
-	$account = $_POST['account'];
-	$time = $_POST['time'];
-	$comments = $_POST['comments'];
-	$button = $_POST['button'];
+	$serial = $_POST['select2']; 
+	$button = $_POST['button2'];
+	
+	$serial_array = explode("+",$serial); 
+	$serial_number = $serial_array[0];   
+	$account = $serial_array[1];         
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>國立臺北教育大學_學習網</title>
+<title>第六組的教學學習網</title>
 </head>
 
 <body>
 <div id="HEADER">
-	<h2>電腦科學學習網</h2>
+	<h2>數學遊戲學習網</h2>
 </div>
 <div id="MAIN_NAV">
 	<ul>
@@ -36,23 +37,58 @@
 		<br/>
 		<center>
 		<?php
-			if($button === "新增"){
-				$sql = "INSERT INTO record (serial, account, time, comments) VALUES ('$serial', '$account', '$time', '$comments')";//要insert的value值
-				$result = mysql_query($sql);
-				if (!$result) { 
-					die('Invalid query: ' . mysql_error());
-				}
-				echo "<h3>資料已新增.....</h3>";
+			/* reading */
+			if($button === "新增"){ 
+		?>
+				<form name="form" method="post" action="admin_record_done.php">
+					<p>
+						序號：<input type="text" name="serial" /> <br>
+						帳號：</h1><input type="text" name="account" /> <br>
+						時間：</h1><input type="text" name="time" /> <br>
+						評論：</h1><input type="text" name="comments" /> <br>
+					</p>
+					<input type="submit" name="button" value="新增" />
+					<p>
+					</p>
+				</form>
+		<?php
 			}
 			else if($button === "修改"){
-				$sql = "UPDATE record SET serial='$serial', account='$account', time='$time', comments='$comments' WHERE serial='$serial' AND account='$account'";//要update的value值
+				
+				$sql = "SELECT * FROM record WHERE serial='$serial_number' AND account='$account'"; 
 				$result = mysql_query($sql);
+											
 				if (!$result) { 
 					die('Invalid query: ' . mysql_error());
 				}
-				echo "<h3>資料已修改.....</h3>";
+				else{
+					$row = mysql_fetch_array(mysql_query($sql));
+		?>
+					<form name="form" method="post" action="admin_record_done.php">
+						<p>
+						序號：<input type="text" name="serial" value="<?php echo $row['serial']; ?>" /> <br>
+						帳號：</h1><input type="text" name="account" value="<?php echo $row['account']; ?>" /> <br>
+						時間：</h1><input type="text" name="time" value="<?php echo $row['time']; ?>" /> <br>
+						評論：</h1><input type="text" name="comments" value="<?php echo $row['comments']; ?>" /> <br>
+						</p>
+						<input type="submit" name="button" value="修改" />
+						<p>
+						</p>
+					</form>
+		<?php
+				}
+			}
+			else if($button === "刪除"){
+				$sql = "DELETE FROM record WHERE serial='$serial_number' AND account='$account'";
+				$result = mysql_query($sql);
+											
+				if (!$result) {
+					die('Invalid query: ' . mysql_error());
+				}
+				else{
+					echo "<h3>資料已刪除.....</h3>";
+				}
 			}	
-						
 		?>
 		</center>
 	</p>	
@@ -60,7 +96,9 @@
 <div id="FOOTER">	
 	<p>
 		<br/><br/><br/><br/><br/><br/>
-		<h2><center><br/>Author by <i>Yi-Chan Kao</i> & <i>Gung-Si Chen</i> </center></h2>
+		<h2><center><br/>
+	      Author by吳映萱&amp;劉柱恩&amp;戴君翰&amp;林利群&amp;李姿盈&amp;曾苡筑<i></i>
+		</center></h2>
 	</p>
 </div>
 </body>
