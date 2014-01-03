@@ -7,7 +7,7 @@
 	$button = $_POST['button'];
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>國立臺北教育大學_學習網</title>
+<title>第六組的教學學習網</title>
 </head>
 
 <body>
@@ -91,7 +91,9 @@
 <div id="FOOTER">	
 	<p>
 		<br/><br/><br/><br/><br/><br/>
-		<h2><center><br/>Author by <i>Yi-Chan Kao</i> & <i>Gung-Si Chen</i> </center></h2>
+		<h2><center><br/>
+	      Author by吳映萱&amp;劉柱恩&amp;戴君翰&amp;林利群&amp;李姿盈&amp;曾苡筑<i></i>
+		</center></h2>
 	</p>
 </div>
 </body>
