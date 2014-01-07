@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>第六組的教學學習網</title>
-    <script type="text/javascript">
+    <script type="text/javascript">    //這是判斷留言版的內容有沒有空白喔!!!!
       function check_data()
       {
         if (document.myForm.author.value.length == 0)
