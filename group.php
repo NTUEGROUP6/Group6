@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>第六組的教學學習網</title>
+<title>第六組的教學學習網</title>      //這是網頁最上面標籤名稱
 </head>
 
 <body>
