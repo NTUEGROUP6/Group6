@@ -24,7 +24,7 @@ include("mysql_connect.php");
 		<li><a href="index.php" style="color:#FF99FF">回首頁</a></li>
 	</ul>
 </div>
-<div id="CONTENT">
+<div id="CONTENT">//從這邊輸入會員帳號密碼
 	<p>
 		<center>
 		<h2>開始閱讀<br/></h2>
