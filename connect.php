@@ -39,7 +39,7 @@ $row = mysql_fetch_array(mysql_query($sql));
 		<br/>
 		
 		<?php
-			if (!$row) { 
+			if (!$row) {   //判斷使用者輸入之帳號密碼是否錯誤
 				echo "<h3>帳號或密碼錯誤，請重新輸入</h3>";
         		echo '<meta http-equiv=REFRESH CONTENT=2;url=login.php>';
 			}
