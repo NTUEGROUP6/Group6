@@ -25,7 +25,7 @@
 <div id="CONTENT" >   
 	<p>
 		<center>
-		<h2>歡迎來到數學學習網<br/></h2>
+		<h2>歡迎來到數學學習網<br/></h2>  //網頁主要畫面
 		<table>
 		<tr>
 			<td width="339" height="33">2014.1.3 編輯網站內容<br/></td>
