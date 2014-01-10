@@ -114,7 +114,7 @@
       mysql_free_result($result);
       mysql_close($link);
     ?>
-    <form name="myForm" method="post" action="post.php">  //新增留言
+    <form name="myForm" method="post" action="post.php">  
       <table border="0" width="800" align="center" cellspacing="0">
         <tr bgcolor="#0084CA" align="center">
           <td colspan="2">
