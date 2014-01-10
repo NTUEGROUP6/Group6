@@ -33,12 +33,12 @@ $row = mysql_fetch_array(mysql_query($sql));
 <div id="CONTENT">
 	<p>
 	
-		<center>
+		<center>    
 		<h2><?php echo $id; ?>，開始閱讀<br/></h2>  
 		<br/>
 		<br/>
 		
-		<?php
+		<?php		//判斷帳號密碼是否為會員
 			if (!$row) { 
 				echo "<h3>帳號或密碼錯誤，請重新輸入</h3>";
         		echo '<meta http-equiv=REFRESH CONTENT=2;url=reading.php>';
