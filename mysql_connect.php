@@ -1,4 +1,4 @@
-<?php  
+<?php                                                       //這是我們團隊登入的帳號密碼專區
 $host="localhost";
 $user="root";
 $password="NTUE";
