@@ -26,7 +26,7 @@
 <div id="CONTENT" >   
 	<p>
 		<center>
-		<h2>小組自行設計區<br/></h2>
+		<h2>小組自行設計區<br/></h2>  //組員名單
 		<table>
 		<tr>
 			<td> <h4>系所<br/></td><td> <h4>姓名<br/></td><td> <h4>學號<br/></td>
