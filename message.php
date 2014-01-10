@@ -114,11 +114,11 @@
       mysql_free_result($result);
       mysql_close($link);
     ?>
-    <form name="myForm" method="post" action="post.php">
+    <form name="myForm" method="post" action="post.php">  //新增留言
       <table border="0" width="800" align="center" cellspacing="0">
         <tr bgcolor="#0084CA" align="center">
           <td colspan="2">
-            <font color="#FFFFFF">請在此輸入新的留言</font></td>  //新增留言
+            <font color="#FFFFFF">請在此輸入新的留言</font></td>  
         </tr>
         <tr bgcolor="#D9F2FF">
           <td width="15%">作者</td>
