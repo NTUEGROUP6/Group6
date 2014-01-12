@@ -9,7 +9,7 @@
 <div id="HEADER">
 	<h2>數學遊戲學習網</h2>
 </div>
-<div id="MAIN_NAV">
+<div id="MAIN_NAV">  //很好
 	<ul>
 		<li><a href="reading.php">開始閱讀</a></li>
 		<li><a href="upload.php">檔案上傳</a></li>
