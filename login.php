@@ -44,7 +44,7 @@
 	<p>
 		<br/><br/><br/><br/><br/><br/>
 		<h2><center><br/>
-	      Author by吳映萱&amp;劉柱恩&amp;戴君翰&amp;林利群&amp;李姿盈&amp;曾苡筑<i></i>
+	      Author by吳映萱&amp;劉柱恩&amp;戴君翰&amp;林利群&amp;李姿盈&amp;曾苡筑<i></i>   //組員名稱
 		</center></h2>
 	</p>
 </div>
